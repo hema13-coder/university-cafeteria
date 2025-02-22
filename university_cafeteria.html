@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كافتريا الجامعة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+        }
+        .menu {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .order-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .order-button:hover {
+            background-color: #218838;
+        }
+        .footer {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            padding-bottom: 60px;
+        }
+    </style>
+    <script>
+        function placeOrder() {
+            let name = prompt("أدخل اسمك من فضلك:");
+            if (name) {
+                alert("شكرًا لك، " + name + "! تم استلام طلبك بنجاح.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">كافتريا الجامعة</div>
+    <div class="container">
+        <div class="menu">
+            <h2>قائمة الطعام</h2>
+            <div class="menu-item"><span>ساندويتش شاورما</span> <span>20 جنيه</span></div>
+            <div class="menu-item"><span>بيتزا صغيرة</span> <span>35 جنيه</span></div>
+            <div class="menu-item"><span>عصير برتقال</span> <span>15 جنيه</span></div>
+            <div class="menu-item"><span>قهوة</span> <span>10 جنيه</span></div>
+            <button class="order-button" onclick="placeOrder()">اطلب الآن</button>
+        </div>
+    </div>
+    <div class="footer">جميع الحقوق محفوظة &copy; 2025</div>
+</body>
+</html>
